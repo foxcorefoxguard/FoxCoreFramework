@@ -1,0 +1,58 @@
+/* 🔳 Phone Frame */
+#phone {
+    width: 300px;
+    height: 500px;
+    background: black;
+    border-radius: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 0.3s ease-in-out;
+    overflow: hidden;
+}
+
+/* 📱 Phone Apps Grid */
+#appGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    list-style: none;
+    padding: 10px;
+}
+
+#appGrid li {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 24px;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
+
+#appGrid li:hover {
+    transform: scale(1.1);
+}
+
+/* 🔥 Dark Mode */
+body.dark-mode {
+    background: rgba(20, 20, 20, 0.9);
+}
+
+/* 🔔 Notifications */
+.notification {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 10px;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}

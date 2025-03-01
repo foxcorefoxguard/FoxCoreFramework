@@ -1,0 +1,29 @@
+<div id="bankingApp" class="app">
+    <h2>🏦 FoxCore Bank</h2>
+    
+    <h3>💰 Balance: $<span id="bankBalance">0</span></h3>
+    
+    <label>💵 Amount:</label>
+    <input type="number" id="bankAmount" placeholder="Enter Amount">
+    
+    <button onclick="depositMoney()">Deposit</button>
+    <button onclick="withdrawMoney()">Withdraw</button>
+    
+    <h3>📤 Send Money</h3>
+    <input type="text" id="recipientID" placeholder="Player ID">
+    <button onclick="sendMoney()">Send</button>
+    
+    <h3>💳 Loan Balance: $<span id="loanBalance">0</span></h3>
+    <input type="number" id="loanPayment" placeholder="Repay Amount">
+    <button onclick="repayLoan()">Repay Loan</button>
+
+    <button onclick="closeApp('bankingApp')">Close</button>
+</div>
+
+<div id="paymentUI" class="app">
+    <h2>💳 Payment Processing</h2>
+    <p>Amount: $<span id="paymentAmount">50</span></p>
+    <p>Reason: <span id="paymentReason">Refueling</span></p>
+    <button onclick="confirmPayment()">Confirm</button>
+    <button onclick="cancelPayment()">Cancel</button>
+</div>
