@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>FoxCore HUD</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div id="hudContainer">
+        <!-- 🔴 Health, Armor, Hunger, Thirst, Stress -->
+        <div class="hud-bar">
+            <div id="healthBar" class="bar"></div>
+            <div id="armorBar" class="bar"></div>
+            <div id="hungerBar" class="bar"></div>
+            <div id="thirstBar" class="bar"></div>
+            <div id="stressBar" class="bar"></div> <!-- New Stress Bar -->
+        </div>
+    
+        <!-- 💰 Money HUD -->
+        <div id="moneyHUD">
+            <p>💵 <span id="cashAmount">$0</span></p>
+            <p>🏦 <span id="bankAmount">$0</span></p>
+        </div>
+    
+        <!-- ⛽ Fuel & Speedometer -->
+        <div id="vehicleHUD">
+            <p>⛽ <span id="fuelLevel">100%</span></p>
+            <p>🚗 <span id="speed">0 km/h</span></p> <!-- New Speedometer -->
+        </div>
+    </div>    
+</body>
+</html>

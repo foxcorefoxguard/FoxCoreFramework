@@ -16,6 +16,19 @@
     transition: all 0.3s ease-in-out;
 }
 
+#fuelLogo {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 10px;
+}
+
+.fuel-brand {
+    color: var(--themeColor, white);
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
 /* 🛑 Close Button */
 #fuelUI button {
     background: #ff4757;

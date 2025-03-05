@@ -1,0 +1,520 @@
+@font-face {
+    font-family: 'nimbus_sans_lbold';
+    src: url('fonts/NimbusSanL-Bol-webfont.eot');
+    src: url('fonts/NimbusSanL-Bol-webfont.eot?#iefix') format('embedded-opentype'),
+    url('fonts/NimbusSanL-Bol-webfont.woff2') format('woff2'),
+    url('fonts/NimbusSanL-Bol-webfont.woff') format('woff'),
+    url('fonts/NimbusSanL-Bol-webfont.ttf') format('truetype'),
+    url('fonts/NimbusSanL-Bol-webfont.svg#nimbus_sans_lbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'nimbusantbolconregular';
+    src: url('fonts/nimbussanst-boldcondensed-webfont.woff2') format('woff2'),
+    url('fonts/nimbussanst-boldcondensed-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+}
+#zn {
+    display:none;
+}
+
+#znTxt {
+    display:none;
+}
+
+#chTxt {
+    position: absolute;
+    top: 79px;
+    left: 153px;
+    width: 14px;
+    height: 6px;
+    text-align: left;
+    font-family: "nimbus_sans_lbold";
+    font-size: 10px;
+    margin-top: 0;
+    margin-left: 0;
+    vertical-align: top;
+    color: #282828;
+}
+#ch {
+    position: absolute;
+    top: 79px;
+    left: 168px;
+    width: 14px;
+    height: 6px;
+    text-align: left;
+    font-family: "nimbus_sans_lbold";
+    font-size: 10px;
+    margin-top: 0;
+    margin-left: 0;
+    vertical-align: top;
+    color: #282828;
+}
+
+#ln01-div
+{
+    display:none;
+}
+
+#ln01 {
+    display:none;
+}
+
+#ln02-div {
+    position: absolute;
+    top: 90px;
+    left: 153px;
+    width: 190px;
+    height: 18px;
+    text-align: left;
+}
+
+#ln02 {
+    font-family: "nimbus_sans_lbold";
+    font-size: 15px;
+    margin-top: 0;
+    margin-left: 0;
+    vertical-align: top;
+    color: #282828;
+}
+
+#alert-div
+{
+    display: none;
+}
+
+#alert {
+    display: none;
+}
+
+.alert-none {
+    display: none;
+}
+
+.alert-red{
+    display: none;
+}
+.alert-yellow{
+    display: none;
+}
+.alert-orange{
+    display: none;
+}
+.alert-blue{
+    display: none;
+}
+
+.alert-blue{
+    display: none;
+}
+
+
+
+#bt01-div {
+    position: absolute;
+    top: 114px;
+    left: 149px;
+    width: 49px;
+    height: 19px;
+    text-align: center;
+}
+
+#bt01 {
+    font-family: "nimbus_sans_lbold";
+    font-size: 12px;
+    text-transform: capitalize;
+    margin-top: 0;
+    margin-left: 0;
+    vertical-align: top;
+    color: white;
+    text-overflow: clip;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+#bt02-div {
+    position: absolute;
+    top: 114px;
+    left: 198px;
+    width: 49px;
+    height: 19px;
+    text-align: center;
+}
+
+#bt02 {
+    font-family: "nimbus_sans_lbold";
+    font-size: 12px;
+    text-transform: capitalize;
+    margin-top: 0;
+    margin-left: 0;
+    vertical-align: top;
+    color: white;
+    text-overflow: clip;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+#bt03-div {
+    position: absolute;
+    top: 114px;
+    left: 248px;
+    width: 49px;
+    height: 19px;
+    text-align: center;
+}
+
+#bt03 {
+    font-family: "nimbus_sans_lbold";
+    font-size: 12px;
+    text-transform: capitalize;
+    margin-top: 0;
+    margin-left: 0;
+    vertical-align: top;
+    color: white;
+    text-overflow: clip;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+#bt04-div {
+    position: absolute;
+    top: 114px;
+    left: 298px;
+    width: 49px;
+    height: 19px;
+    text-align: center;
+}
+
+#bt04 {
+    font-family: "nimbus_sans_lbold";
+    font-size: 12px;
+    text-transform: capitalize;
+    margin-top: 0;
+    margin-left: 0;
+    vertical-align: top;
+    color: white;
+    text-overflow: clip;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+#bt05-div
+{
+    display:none;
+}
+
+#bt05 {
+    display:none;
+}
+
+#radio {
+    position: absolute;
+    right: 50px;
+    bottom: -134px;
+    height: 408px;
+    width: 568px;
+    background: url(XPR5550e.png) no-repeat;
+    background-size: contain;
+}
+
+#btnEmerg {
+    display: none;
+    position: absolute;
+    left: 100px;
+    top: 78px;
+    width: 21px;
+    height: 10px;
+}
+
+#btnHome {
+    position: absolute;
+    left: 371px;
+    top: 166px;
+    width: 44px;
+    height: 24px;
+}
+
+#btn1 {
+    position: absolute;
+    left: 147px;
+    top: 167px;
+    width: 46px;
+    height: 23px;
+}
+
+
+
+#btn2 {
+    position: absolute;
+    left: 200px;
+    top: 167px;
+    width: 46px;
+    height: 23px;
+}
+
+#btn3 {
+    position: absolute;
+    left: 251px;
+    top: 167px;
+    width: 46px;
+    height: 23px;
+}
+
+#btn4 {
+    position: absolute;
+    left: 304px;
+    top: 167px;
+    width: 46px;
+    height: 23px;
+}
+
+#btn5
+{
+    display:none;
+}
+
+#btnUp {
+    position: absolute;
+    left: 373px;
+    top: 56px;
+    width: 43px;
+    height: 26px;
+}
+
+#btnDown {
+    position: absolute;
+    left: 371px;
+    top: 121px;
+    width: 45px;
+    height: 27px;
+}
+
+#btnLeft
+{
+    display:none;
+}
+
+#btnRight
+{
+    display: none;
+    position: absolute;
+    left: 69px;
+    top: 22px;
+    width: 29px;
+    height: 62px;
+}
+
+
+#btnPower {
+    position: absolute;
+    left: 16px;
+    top: 62px;
+    width: 38px;
+    height: 35px;
+}
+
+#redLED
+{
+    display:none;
+}
+
+#orangeLED
+{
+    display:none;
+}
+
+#greenLED
+{
+    display:none;
+}
+
+#alertLED {
+    display: none;
+    position: absolute;
+    left: 51px;
+    top: 130px;
+    width: 29px;
+    height: 8px;
+    z-index: 1;
+}
+
+#multiFunctionLED {
+    display: none;
+}
+
+#redLEDImg
+{
+    position: absolute;
+    height: 537px;
+    width: 570px;
+    background: url("XPR5550e-red-led.png") no-repeat;
+    background-size: contain;
+}
+
+#orangeLEDImg
+{
+    position: absolute;
+    height: 537px;
+    width: 570px;
+    background: url("XPR5550e-orange-led.png") no-repeat;
+    background-size: contain;
+}
+
+#greenLEDImg
+{
+    position: absolute;
+    height: 537px;
+    width: 570px;
+    background: url("XPR5550e-green-led.png") no-repeat;
+    background-size: contain;
+}
+
+#battery-icon-div {
+    display: none;
+    position: absolute;
+    background-size: contain;
+    width: 14px;
+    height: 10px;
+    left: 60px;
+    top: 207px;
+}
+
+
+#battery-icon-div.batt-1 {
+    background-size: contain;
+    background: url("icons/batt-1.png") no-repeat;
+}
+#battery-icon-div.batt-2 {
+    background-size: contain;
+    background: url("icons/batt-2.png") no-repeat;
+}
+#battery-icon-div.batt-3 {
+    background-size: contain;
+    background: url("icons/batt-3.png") no-repeat;
+}
+#battery-icon-div.batt-4 {
+    background-size: contain;
+    background: url("icons/batt-4.png") no-repeat;
+}
+#battery-icon-div.batt-low {
+    background-size: contain;
+    background: url("icons/batt-low.png") no-repeat;
+    animation: blinking 1s linear infinite;
+}
+
+@keyframes blinking {
+    100% {
+        opacity:100;
+    }
+    1%{
+        opacity:0;
+    }
+    49% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 100;
+    }
+}
+
+#rssi-icon-div {
+    position: absolute;
+    background: url(icons/rssi-0.png) no-repeat;
+    background-size: contain;
+    width: 14px;
+    height: 12px;
+    left: 151px;
+    top: 62px;
+    display: none;
+}
+
+
+#rssi-icon-div.rssi-0 {
+    background: url("icons/rssi-0.png") no-repeat;
+    background-size: contain;
+}
+
+#rssi-icon-div.rssi-1 {
+    background: url("icons/rssi-1.png") no-repeat;
+    background-size: contain;
+}
+
+#rssi-icon-div.rssi-2 {
+    background: url("icons/rssi-2.png") no-repeat;
+    background-size: contain;
+}
+
+#rssi-icon-div.rssi-3 {
+    background: url("icons/rssi-3.png") no-repeat;
+    background-size: contain;
+}
+
+#rssi-icon-div.rssi-4 {
+    background: url("icons/rssi-4.png") no-repeat;
+    background-size: contain;
+}
+
+#rssi-icon-div.rssi-tx {
+    background: url("icons/rssi-tx.png") no-repeat;
+    background-size: contain;
+}
+
+#rssi-icon-div.rssi-rx {
+    background: url("icons/rssi-rx.png") no-repeat;
+    background-size: contain;
+}
+
+#scan-icon-div {
+    position: absolute;
+    background: url(icons/scan.png) no-repeat;
+    background-size: contain;
+    width: 12px;
+    height: 12px;
+    left: 183px;
+    top: 61px;
+}
+
+#secure-icon-div {
+    position: absolute;
+    background: url(icons/secure.png) no-repeat;
+    background-size: contain;
+    width: 14px;
+    height: 14px;
+    left: 212px;
+    top: 61px;
+}
+
+#gps-icon-div {
+    position: absolute;
+    background: url(icons/gps.png) no-repeat;
+    background-size: contain;
+    width: 12px;
+    height: 12px;
+    left: 196px;
+    top: 61px;
+}
+
+
+#direct-icon-div {
+    position: absolute;
+    background: url(icons/dir.png) no-repeat;
+    background-size: contain;
+    width: 11px;
+    height: 12px;
+    left: 169px;
+    top: 62px;
+}

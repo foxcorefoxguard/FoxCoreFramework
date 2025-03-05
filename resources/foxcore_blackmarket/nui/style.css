@@ -1,0 +1,53 @@
+/* 🌑 Dark Theme Styling */
+body {
+    background-color: #121212;
+    font-family: Arial, sans-serif;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* 🔲 Black Market UI */
+#blackMarketUI {
+    background-color: rgba(0, 0, 0, 0.85);
+    border-radius: 10px;
+    padding: 20px;
+    width: 350px;
+    text-align: center;
+    display: none;
+}
+
+#blackMarketUI h2 {
+    color: #ff3838;
+    margin-bottom: 15px;
+}
+
+/* 📜 Item List */
+#marketItems {
+    list-style: none;
+    padding: 0;
+}
+
+#marketItems li {
+    background-color: #222;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+}
+
+/* 🛒 Buttons */
+button {
+    background-color: #ff3838;
+    border: none;
+    color: white;
+    padding: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #cc2929;
+}

@@ -1,0 +1,66 @@
+:root {
+    --healthColor: #ff3838;
+    --armorColor: #4287f5;
+    --hungerColor: #ffa502;
+    --thirstColor: #00d2ff;
+    --fuelColor: #ffffff;
+    --bgColor: rgba(0, 0, 0, 0.6);
+    --textColor: #ffffff;
+}
+
+/* 🖥️ HUD Container */
+#hudContainer {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    width: 300px;
+    background: var(--bgColor);
+    padding: 10px;
+    border-radius: var(--hudBorderRadius, 8px);
+    color: var(--textColor);
+    font-family: 'Arial', sans-serif;
+    transition: all 0.5s ease-in-out;
+}
+
+/* 🔴 HUD Bars (Smooth Transitions) */
+.hud-bar {
+    width: 100%;
+    height: 10px;
+    margin: 5px 0;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: var(--hudBorderRadius, 5px);
+    overflow: hidden;
+}
+
+.bar {
+    height: 100%;
+    transition: width 0.3s ease-in-out;
+}
+
+#healthBar { background: var(--healthColor); width: 100%; }
+#armorBar { background: var(--armorColor); width: 100%; }
+#hungerBar { background: var(--hungerColor); width: 100%; }
+#thirstBar { background: var(--thirstColor); width: 100%; }
+#stressBar { background: var(--stressColor); width: 0%; } /* Hidden by Default */
+
+/* 🚗 Speedometer */
+#vehicleHUD {
+    display: none; /* Only visible in vehicle */
+    text-align: left;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+/* 💰 Money HUD */
+#moneyHUD {
+    text-align: left;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+/* ⛽ Fuel HUD */
+#fuelHUD {
+    text-align: left;
+    font-size: 16px;
+    margin-top: 10px;
+}

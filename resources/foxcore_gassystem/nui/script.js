@@ -14,3 +14,15 @@ function startRefueling() {
 function closeFuelUI() {
     document.getElementById("fuelUI").style.display = "none";
 }
+
+function playFuelSound(soundType) {
+    let soundPath = "";
+
+    if (soundType === "pump") soundPath = "media/sounds/fuel_pump.mp3";
+    if (soundType === "jerrycan") soundPath = "media/sounds/jerrycan.mp3";
+    if (soundType === "siphoning") soundPath = "media/sounds/siphoning.mp3";
+
+    let audio = new Audio(soundPath);
+    audio.volume = 0.8;
+    audio.play();
+}
