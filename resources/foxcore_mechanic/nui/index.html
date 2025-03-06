@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>FoxCore Mechanic</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="mechanicUI">
+        <h2>Mechanic Menu</h2>
+        
+        <h3>Install Upgrades</h3>
+        <select id="partType">
+            <option value="turbo">Turbo</option>
+            <option value="engine">Engine</option>
+            <option value="brakes">Brakes</option>
+        </select>
+
+        <select id="partLevel">
+            <option value="1">Level 1</option>
+            <option value="2">Level 2</option>
+            <option value="3">Level 3</option>
+        </select>
+
+        <button onclick="upgradeVehicle()">Install Part</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
