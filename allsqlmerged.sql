@@ -33,7 +33,14 @@ CREATE TABLE IF NOT EXISTS `characters` (
 
 -- 🛠️ Sync QBCore Players into FoxCore
 INSERT INTO `foxcore_users` (`identifier`, `name`, `job`, `job_grade`, `money`, `inventory`, `last_seen`)
-SELECT `citizenid`, CONCAT(`charinfo`->>'$.firstname', ' ', `charinfo`->>'$.lastname'), `job`, `job_grade`, `money`, `inventory`, NOW()
+SELECT 
+    `identifier`, 
+    `name`, 
+    'unemployed' AS job, -- Default job since 'job' column doesn't exist
+    0 AS job_grade, -- Default job_grade
+    '{}' AS money, -- Default empty JSON for money
+    '{}' AS inventory, -- Default empty JSON for inventory
+    NOW() AS last_seen
 FROM `players`
 ON DUPLICATE KEY UPDATE 
     `job` = VALUES(`job`),
@@ -41,6 +48,7 @@ ON DUPLICATE KEY UPDATE
     `money` = VALUES(`money`),
     `inventory` = VALUES(`inventory`),
     `last_seen` = NOW();
+ALTER TABLE `players` ADD COLUMN IF NOT EXISTS `charinfo` JSON DEFAULT '{}';
 
 -- =============================================
 -- INVENTORY SYSTEM
@@ -55,10 +63,6 @@ CREATE TABLE IF NOT EXISTS `inventory` (
     UNIQUE(`identifier`, `item`)
 );
 
--- Add items for gas system
-INSERT INTO items (name, label, type, weight) VALUES
-('jerrycan', 'Jerrycan', 'usable', 5),
-('syphoningkit', 'Siphoning Kit', 'usable', 3);
 
 -- =============================================
 -- JOBS & ECONOMY SYSTEM
@@ -145,10 +149,12 @@ CREATE TABLE IF NOT EXISTS `foxcore_licenses` (
     FOREIGN KEY (`identifier`) REFERENCES `foxcore_users`(`identifier`) ON DELETE CASCADE
 );
 
--- 🔄 Sync Existing QBCore Licenses into FoxCore
+-- 🔄 Sync Existing QBCore Licenses into FoxCore (commented out due to missing columns)
+/*
 INSERT INTO `foxcore_licenses` (`identifier`, `license_type`, `status`)
-SELECT `citizenid`, `metadata`->>'$.licenses', 1 FROM `players`
+SELECT `identifier`, JSON_EXTRACT(`metadata`, '$.licenses'), 1 FROM `players`
 ON DUPLICATE KEY UPDATE `status` = VALUES(`status`);
+*/
 
 -- =============================================
 -- PHONE SYSTEM
