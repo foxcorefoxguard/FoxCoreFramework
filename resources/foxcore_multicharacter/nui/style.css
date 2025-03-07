@@ -1,0 +1,24 @@
+body {
+    display: none;
+    background: rgba(0, 0, 0, 0.7);
+    text-align: center;
+}
+
+#character-selection {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(20, 20, 20, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+}
+
+.character-slot {
+    display: inline-block;
+    padding: 15px;
+    margin: 10px;
+    background: #1e90ff;
+    cursor: pointer;
+}
