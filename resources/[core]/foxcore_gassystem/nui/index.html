@@ -1,0 +1,22 @@
+<div id="fuelUI">
+    <img id="fuelLogo" src="media/logos/default.png">
+    <h2 id="fuelBrand">FoxCore Gas Station</h2>
+
+    <label>Select Fuel Type:</label>
+    <select id="fuelType">
+        <option value="regular">Regular ($3.5/L)</option>
+        <option value="premium">Premium ($4.5/L)</option>
+        <option value="diesel">Diesel ($3.0/L)</option>
+    </select>
+
+    <label>💵 Payment Method:</label>
+    <select id="paymentMethod">
+        <option value="cash">Cash</option>
+        <option value="bank">Bank</option>
+        <option value="phone">Phone</option>
+    </select>
+
+    <button onclick="startRefueling()">Refuel</button>
+    <button onclick="closeFuelUI()">Cancel</button>
+</div>
+
