@@ -165,4 +165,4 @@ This is a custom framework built for private use. Redistribution or resale is pr
 
 ## 🚨 Need Support?
 
-Open a support ticket in your development community or contact the dev directly.
+Open a support ticket in FoxCore/FoxGuard Discord 
