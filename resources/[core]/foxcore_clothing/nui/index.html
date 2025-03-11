@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>FoxCore Customization</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div id="shop-ui">
+        <h1>Character Customization</h1>
+        
+        <h2>Outfits</h2>
+        <input type="text" id="outfit-name" placeholder="Outfit Name">
+        <button onclick="saveOutfit()">💾 Save Outfit</button>
+        <button onclick="loadOutfit()">📂 Load Outfit</button>
+
+        <h2>Clothing</h2>
+        <button onclick="purchaseItem('shirt')">Buy Shirt ($100)</button>
+        <button onclick="purchaseItem('pants')">Buy Pants ($80)</button>
+
+        <h2>Hair & Facial Hair</h2>
+        <button onclick="purchaseHaircut('haircut')">Get Haircut ($250)</button>
+        <button onclick="purchaseHaircut('beard')">Trim Beard ($100)</button>
+        <button onclick="purchaseHaircut('haircolor')">Change Hair Color ($50)</button>
+
+        <h2>Tattoos & Piercings</h2>
+        <button onclick="purchaseTattoo('tattoo')">Get a Tattoo ($500)</button>
+        <button onclick="purchaseTattoo('piercing')">Get a Piercing ($200)</button>
+
+        <h2>Wardrobe</h2>
+        <input type="text" id="outfit-name" placeholder="Outfit Name">
+        <button onclick="saveOutfit()">💾 Save Outfit</button>
+        <button onclick="loadOutfit()">📂 Load Outfit</button>
+
+        <h2>Tattoo Removal</h2>
+        <button onclick="removeTattoo()">Remove Tattoos ($1000)</button>
+
+        <h2>Job Outfits</h2>
+        <div id="job-outfits"></div>
+
+        <h2>Wardrobe</h2>
+        <input type="text" id="outfit-name" placeholder="Outfit Name">
+        <button onclick="saveOutfit()">💾 Save Outfit</button>
+        <button onclick="loadOutfit()">📂 Load Outfit</button>
+
+        <h2>Preview Outfit</h2>
+        <button onclick="startPreview()">👕 Start Preview</button>
+        <button onclick="stopPreview()">❌ Stop Preview</button>
+
+        <button onclick="closeUI()">Close</button>
+    </div>
+</body>
+</html>

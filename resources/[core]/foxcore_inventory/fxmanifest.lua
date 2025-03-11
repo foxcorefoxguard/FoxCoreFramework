@@ -16,7 +16,8 @@ files {
 shared_scripts {
     'shared/config.lua',
     'shared/items.lua',
-    'shared/weights.lua'
+    'shared/weights.lua',
+    'shared/weapons.lua'
 }
 
 client_scripts {

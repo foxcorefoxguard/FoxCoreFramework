@@ -12,3 +12,9 @@ Config.Cutscene = {
     Start = { x = -1005.0, y = -475.0, z = 50.0, heading = 180.0 },
     End = { x = -900.0, y = -200.0, z = 70.0, heading = 200.0 }
 }
+
+-- 🏃 Ped Animations
+Config.Animations = {
+    Idle = "WORLD_HUMAN_STAND_IMPATIENT", -- Default idle animation
+    Walk = "move_m@brave"  -- Walk cycle when previewing characters
+}

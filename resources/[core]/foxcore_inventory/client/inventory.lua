@@ -17,3 +17,8 @@ end)
 RegisterNUICallback("closeInventory", function()
     SetNuiFocus(false, false)
 end)
+
+-- Display weapons in inventory
+for weapon, data in pairs(FoxCoreWeapons) do
+    print(("Weapon: %s | Label: %s | Weight: %.1fkg"):format(weapon, data.label, data.weight))
+end

@@ -48,3 +48,12 @@ RegisterNetEvent("foxcore_inventory:giveItem", function(target, item, quantity)
     })
     TriggerClientEvent("foxcore_inventory:updateInventory", target)
 end)
+
+local function canCarryWeapon(player, weaponId)
+    local weapon = FoxCoreWeapons[weaponId]
+    if not weapon then return false end
+
+    local currentWeight = player.Functions.GetWeight()
+    return (currentWeight + weapon.weight) <= player.Functions.GetMaxWeight()
+end
+

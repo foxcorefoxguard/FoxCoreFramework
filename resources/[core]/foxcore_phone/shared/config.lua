@@ -1,7 +1,6 @@
 Config = {}
 
 Config.Phone = {
-    Config = {}
     Config.DebugMode = true -- Set to false to disable debug mode
     Config.DiscordWebhook = "YOUR_DISCORD_WEBHOOK_URL_HERE" -- 🔗 Set your webhook URL here
     Config.FiveManageWebhook = "https://api.fivemanage.com/logs"
