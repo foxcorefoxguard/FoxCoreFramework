@@ -1,256 +1,364 @@
-Config.Items = {
+Items = {
     -- 📦 General Storage Items
     ["backpack"] = {
-        name = "Backpack",
-        description = "Provides additional inventory space.",
-        weight = 5.0,
+        name = "backpack",
+        label = "Backpack",
+        weight = 5,
         canUse = false,
-        canRemove = true
+        image = "nui/images/backpack.png"
     },
     ["wallet"] = {
-        name = "Wallet",
-        description = "Stores cash and identification.",
-        weight = 0.3,
+        name = "wallet",
+        label = "Wallet",
+        weight = 1,
         canUse = false,
-        canRemove = true
+        image = "nui/images/wallet.png"
     },
 
     -- 💰 Money & Banking Items
     ["cash"] = {
-        name = "Cash",
-        description = "Physical money used for transactions.",
-        weight = 0.0,
+        name = "cash",
+        label = "Cash",
+        weight = 1,
         canUse = false,
-        canRemove = true
+        image = "nui/images/cash.png"
     },
     ["debit_card"] = {
-        name = "Debit Card",
-        description = "Linked to your bank account for payments.",
-        weight = 0.1,
+        name = "debit_card",
+        label = "Debit Card",
+        weight = 1,
         canUse = false,
-        canRemove = true
+        image = "nui/images/debit_card.png"
     },
 
     -- 🍔 Food & Drinks
     ["water_bottle"] = {
-        name = "Water Bottle",
-        description = "Stay hydrated!",
-        weight = 0.5,
+        name = "water_bottle",
+        label = "Water Bottle",
+        weight = 1,
         canUse = true,
-        canRemove = true
+        image = "nui/images/water_bottle.png"
     },
     ["sandwich"] = {
-        name = "Sandwich",
-        description = "A simple sandwich to reduce hunger.",
-        weight = 0.7,
+        name = "sandwich",
+        label = "Sandwich",
+        weight = 1,
         canUse = true,
-        canRemove = true
+        image = "nui/images/sandwich.png"
     },
 
     -- 🔧 Tools & Miscellaneous
     ["repair_kit"] = {
-        name = "Repair Kit",
-        description = "Used to repair damaged vehicles.",
-        weight = 2.5,
+        name = "repair_kit",
+        label = "Repair Kit",
+        weight = 3,
         canUse = true,
-        canRemove = true
+        image = "nui/images/repair_kit.png"
     },
     ["lockpick"] = {
-        name = "Lockpick",
-        description = "Used to break into locked doors and vehicles.",
-        weight = 0.8,
+        name = "lockpick",
+        label = "Lockpick",
+        weight = 1,
         canUse = true,
-        canRemove = true
+        image = "nui/images/lockpick.png"
     },
 
     -- 🔬 Forensic & Investigation Items
     ["dna_kit"] = {
-        name = "DNA Kit",
-        description = "Used to collect DNA samples.",
-        weight = 1.0,
+        name = "dna_kit",
+        label = "DNA Kit",
+        weight = 1,
         canUse = true,
-        canRemove = true
+        image = "nui/images/dna_kit.png"
     },
     ["fingerprint_scanner"] = {
-        name = "Fingerprint Scanner",
-        description = "Used to scan and log fingerprints.",
-        weight = 1.5,
+        name = "fingerprint_scanner",
+        label = "Fingerprint Scanner",
+        weight = 2,
         canUse = true,
-        canRemove = true
+        image = "nui/images/fingerprint_scanner.png"
     },
     ["evidence_bag"] = {
-        name = "Evidence Bag",
-        description = "Used to store collected evidence.",
-        weight = 0.5,
+        name = "evidence_bag",
+        label = "Evidence Bag",
+        weight = 1,
         canUse = true,
-        canRemove = true
+        image = "nui/images/evidence_bag.png"
     },
     ["bullet_casing"] = {
-        name = "Bullet Casing",
-        description = "Collected from crime scenes, used for ballistics analysis.",
-        weight = 0.3,
+        name = "bullet_casing",
+        label = "Bullet Casing",
+        weight = 1,
         canUse = false,
-        canRemove = true
+        image = "nui/images/bullet_casing.png"
     },
     ["crime_photo"] = {
-        name = "Crime Scene Photo",
-        description = "Photographic evidence from a crime scene.",
-        weight = 0.2,
+        name = "crime_photo",
+        label = "Crime Scene Photo",
+        weight = 1,
         canUse = false,
-        canRemove = true
+        image = "nui/images/crime_photo.png"
     },
 
     -- 🚔 Police Equipment
     ["handcuffs"] = {
-        name = "Handcuffs",
-        description = "Used to restrain a suspect.",
-        weight = 1.0,
+        name = "handcuffs",
+        label = "Handcuffs",
+        weight = 1,
         canUse = true,
-        canRemove = false
+        image = "nui/images/handcuffs.png"
     },
     ["police_radio"] = {
-        name = "Police Radio",
-        description = "Used for secure police communication.",
-        weight = 0.5,
+        name = "police_radio",
+        label = "Police Radio",
+        weight = 1,
         canUse = true,
-        canRemove = false
+        image = "nui/images/police_radio.png"
     },
     ["body_cam"] = {
-        name = "Body Camera",
-        description = "Records officer interactions in real-time.",
-        weight = 1.2,
+        name = "body_cam",
+        label = "Body Camera",
+        weight = 1,
         canUse = true,
-        canRemove = false
+        image = "nui/images/body_cam.png"
     },
     ["taser"] = {
-        name = "Taser",
-        description = "Non-lethal weapon used to subdue suspects.",
-        weight = 1.8,
+        name = "taser",
+        label = "Taser",
+        weight = 2,
         canUse = true,
-        canRemove = false
+        image = "nui/images/taser.png"
     },
 
     -- 🚑 EMS Equipment
     ["defibrillator"] = {
-        name = "Defibrillator",
-        description = "Used to revive unconscious patients.",
-        weight = 5.0,
+        name = "defibrillator",
+        label = "Defibrillator",
+        weight = 5,
         canUse = true,
-        canRemove = true
+        image = "nui/images/defibrillator.png"
     },
-
     ["iv_bag"] = {
-        name = "IV Bag",
-        description = "Restores hydration and stabilizes health.",
-        weight = 1.0,
+        name = "iv_bag",
+        label = "IV Bag",
+        weight = 1,
         canUse = true,
-        canRemove = true
+        image = "nui/images/iv_bag.png"
     },
-
     ["blood_bag"] = {
-        name = "Blood Bag",
-        description = "Restores blood loss and increases stamina.",
-        weight = 1.5,
+        name = "blood_bag",
+        label = "Blood Bag",
+        weight = 2,
         canUse = true,
-        canRemove = true
+        image = "nui/images/blood_bag.png"
     },
-
     ["morphine"] = {
-        name = "Morphine",
-        description = "Pain relief injection. Risk of addiction.",
-        weight = 0.5,
+        name = "morphine",
+        label = "Morphine",
+        weight = 1,
         canUse = true,
-        canRemove = true
+        image = "nui/images/morphine.png"
     },
-
     ["medkit"] = {
-        name = "Medkit",
-        description = "Full medical kit for treating wounds.",
-        weight = 2.0,
+        name = "medkit",
+        label = "Medkit",
+        weight = 2,
         canUse = true,
-        canRemove = true
+        image = "nui/images/medkit.png"
     },
 
     -- 🦽 Mobility Aids
     ["wheelchair"] = {
-        name = "Wheelchair",
-        description = "Assists mobility for injured players.",
-        weight = 10.0,
+        name = "wheelchair",
+        label = "Wheelchair",
+        weight = 10,
         canUse = true,
-        canRemove = true
+        image = "nui/images/wheelchair.png"
     },
-
     ["stretcher"] = {
-        name = "Stretcher",
-        description = "For moving critically injured patients.",
-        weight = 15.0,
+        name = "stretcher",
+        label = "Stretcher",
+        weight = 15,
         canUse = true,
-        canRemove = true
+        image = "nui/images/stretcher.png"
     },
 
     -- 🚨 Illegal Drugs
     ["weed"] = {
-        name = "Weed",
-        description = "An illegal substance. Police might seize this!",
-        weight = 0.5,
+        name = "weed",
+        label = "Weed",
+        weight = 1,
         canUse = true,
-        canRemove = true,
-        illegal = true
+        image = "nui/images/weed.png"
     },
     ["cocaine"] = {
-        name = "Cocaine",
-        description = "Highly illegal and valuable on the black market.",
-        weight = 0.5,
+        name = "cocaine",
+        label = "Cocaine",
+        weight = 1,
         canUse = true,
-        canRemove = true,
-        illegal = true
+        image = "nui/images/cocaine.png"
     },
     ["meth"] = {
-        name = "Meth",
-        description = "Dangerous and illegal. Might attract police attention.",
-        weight = 0.6,
+        name = "meth",
+        label = "Meth",
+        weight = 1,
         canUse = true,
-        canRemove = true,
-        illegal = true
+        image = "nui/images/meth.png"
     },
 
     -- 🔫 Illegal Weapons
     ["stolen_gun"] = {
-        name = "Stolen Gun",
-        description = "An unregistered weapon. Police will seize this!",
-        weight = 3.0,
+        name = "stolen_gun",
+        label = "Stolen Gun",
+        weight = 3,
         canUse = true,
-        canRemove = true,
-        illegal = true
+        image = "nui/images/stolen_gun.png"
     },
     ["silencer"] = {
-        name = "Silencer",
-        description = "Attachment for firearms. Illegal without a permit.",
-        weight = 1.0,
+        name = "silencer",
+        label = "Silencer",
+        weight = 1,
         canUse = true,
-        canRemove = true,
-        illegal = true
+        image = "nui/images/silencer.png"
     },
 
-    -- 💰 Stolen Goods
-    ["stolen_watch"] = {
-        name = "Stolen Watch",
-        description = "A high-value stolen item. Sell it on the black market.",
-        weight = 0.2,
-        canUse = false,
-        canRemove = true,
-        illegal = true
+    -- 📻 Communication
+    ["radio"] = {
+        name = "radio",
+        label = "Handheld Radio",
+        weight = 2,
+        canUse = true,
+        image = "nui/images/radio.png"
     },
+    ["radio_battery"] = {
+        name = "radio_battery",
+        label = "Radio Battery",
+        weight = 0.5,
+        canUse = true,
+        image = "nui/images/radio_battery.png"
+    },
+    
+-- 🔑 Keys and Security
+    ["house_key"] = {
+        name = "house_key",
+        label = "House Key",
+        weight = 0.1,
+        canUse = true,
+        image = "nui/images/house_key.png"
+    },
+    ["locksmith_kit"] = {
+        name = "locksmith_kit",
+        label = "Locksmith Kit",
+        weight = 2,
+        canUse = true,
+        image = "nui/images/locksmith_kit.png"
+    },
+    ["keycard"] = {
+        name = "keycard",
+        label = "Security Keycard",
+        weight = 0.5,
+        canUse = true,
+        image = "nui/images/keycard.png"
+    },
+    
+-- 🔧 Vehicle Maintenance
+    ["repair_kit"] = {
+        name = "repair_kit",
+        label = "Repair Kit",
+        weight = 5,
+        canUse = true,
+        image = "nui/images/repair_kit.png"
+    },
+    ["engine_oil"] = {
+        name = "engine_oil",
+        label = "Engine Oil",
+        weight = 1,
+        canUse = true,
+        image = "nui/images/engine_oil.png"
+    },
+    ["tuning_chip"] = {
+        name = "tuning_chip",
+        label = "Tuning Chip",
+        weight = 0.5,
+        canUse = true,
+        image = "nui/images/tuning_chip.png"
+    },
+    
+-- 💰 Stolen Goods
     ["stolen_jewelry"] = {
-        name = "Stolen Jewelry",
-        description = "Expensive but risky to carry.",
-        weight = 0.3,
+        name = "stolen_jewelry",
+        label = "Stolen Jewelry",
+        weight = 1,
         canUse = false,
-        canRemove = true,
-        illegal = true
-    }
-}
+        image = "nui/images/stolen_jewelry.png"
+    },
+    ["stolen_watch"] = {
+        name = "stolen_watch",
+        label = "Stolen Watch",
+        weight = 1,
+        canUse = false,
+        image = "nui/images/stolen_watch.png"
+    },
+    
+-- 🔨 Heist Tools
+    ["drill"] = {
+        name = "drill",
+        label = "Drill",
+        weight = 3,
+        canUse = true,
+        image = "nui/images/drill.png"
+    },
+    ["boosting_laptop"] = {
+        name = "boosting_laptop",
+        label = "Boosting Laptop",
+        weight = 3,
+        canUse = true,
+        image = "nui/images/boosting_laptop.png"
+    },
+    ["hacking_device"] = {
+        name = "hacking_device",
+        label = "Hacking Device",
+        weight = 2,
+        canUse = true,
+        image = "nui/images/hacking_device.png"
+    },
+    ["explosives"] = {
+        name = "explosives",
+        label = "Explosives",
+        weight = 5,
+        canUse = true,
+        image = "nui/images/explosives.png"
+    },
+    
+-- 📦 Delivery Items
+    ["fruit_basket"] = {
+        name = "fruit_basket",
+        label = "Fruit Basket",
+        weight = 5,
+        canUse = true,
+        image = "nui/images/fruit_basket.png"
+    },
+    ["delivery_box"] = {
+        name = "delivery_box",
+        label = "Delivery Box",
+        weight = 3,
+        canUse = true,
+        image = "nui/images/delivery_box.png"
+    },
 
-function Items.GetItem(itemName)
-    return Items.List[itemName] or nil
-end
+    -- Phone 
+    ["sim_card"] = { 
+        label = "SIM Card", 
+        weight = 0.1, 
+        canUse = true, 
+        image = "nui/images/sim_card.png" 
+    },
+    ["phone_case"] = { 
+        label = "Phone Case", 
+        weight = 0.2, 
+        canUse = true, 
+        image = "nui/images/phone_case.png" 
+    },
+
+
+}

@@ -1,45 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
     <title>FoxCore Banking</title>
-    <script src="script.js"></script>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="bankUI">
-        <h2>🏦 FoxCore Bank</h2>
-        <label>Select Account:</label>
-        <select id="accountType">
-            <option value="checking">Checking</option>
-            <option value="savings">Savings</option>
-            <option value="business">Business</option>
-        </select>
 
-        <label>💳 Select Card:</label>
-        <select id="cardType">
-            <option value="default">Classic</option>
-            <option value="gold">Gold</option>
-            <option value="platinum">Platinum</option>
-            <option value="crypto">Crypto Card</option>
-        </select>
-
-        <h3>💰 Balance: $<span id="balance">0</span></h3>
-
-        <input type="number" id="amount" placeholder="Enter Amount">
-        <button onclick="depositMoney()">Deposit</button>
-        <button onclick="withdrawMoney()">Withdraw</button>
-
-        <h3>🏦 Loan System</h3>
-        <input type="number" id="loanAmount" placeholder="Loan Amount">
-        <button onclick="requestLoan()">Request Loan</button>
-        <button onclick="repayLoan()">Repay Loan</button>
-        
-        <h3>👥 Shared Accounts</h3>
-        <input type="text" id="sharedUser" placeholder="Player ID">
-        <button onclick="createSharedAccount()">Create Shared Account</button>
-
-
-        <button onclick="closeBank()">Close</button>
+<div id="banking-ui">
+    <div id="header">
+        <img src="images/logo.png" alt="Bank Logo">
+        <h1>FoxCore Bank</h1>
+        <button onclick="closeBanking()">X</button>
     </div>
+
+    <div id="balance-section">
+        <h2>Account Balance</h2>
+        <span id="account-balance">$0</span>
+    </div>
+
+    <div id="actions">
+        <button onclick="openDeposit()">💰 Deposit</button>
+        <button onclick="openWithdraw()">🏦 Withdraw</button>
+        <button onclick="openTransfer()">🔄 Transfer</button>
+    </div>
+
+    <div id="transaction-history">
+        <h3>Transaction History</h3>
+        <ul id="transaction-list">
+            <!-- Transactions will be loaded here -->
+        </ul>
+    </div>
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>

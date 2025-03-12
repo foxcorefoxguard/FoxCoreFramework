@@ -28,7 +28,7 @@ Config.TXDOC = {
     JobName = "txdoc",
     SecurityCameras = true,
     Alarms = true,
-    ArmoryLocation = { x = 1750.0, y = 2550.0, z = 45.6 }
+    ArmoryLocation = { x = 1750.0, y = 2550.0, z = 45.6 },
     HQLocation = { x = 1770.0, y = 2560.0, z = 45.6 },
     WardensOffice = { x = 1780.0, y = 2565.0, z = 45.6 }
 }

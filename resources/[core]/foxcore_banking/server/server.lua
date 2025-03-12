@@ -114,3 +114,25 @@ AddEventHandler("foxcore_phone:sendMoney", function(data)
         end
     end)
 end)
+
+-- PayCheck 
+RegisterNetEvent('foxcore_banking:depositToAccount')
+AddEventHandler('foxcore_banking:depositToAccount', function(identifier, accountType, amount)
+    MySQL.update("UPDATE bank_accounts SET balance = balance + ? WHERE owner_identifier = ? AND account_name = ?", {amount, identifier, accountType})
+end)
+
+RegisterNetEvent("foxcore_banking:deposit")
+AddEventHandler("foxcore_banking:deposit", function(amount)
+    -- Handle deposit logic
+end)
+
+RegisterNetEvent("foxcore_banking:withdraw")
+AddEventHandler("foxcore_banking:withdraw", function(amount)
+    -- Handle withdraw logic
+end)
+
+RegisterNetEvent("foxcore_banking:transfer")
+AddEventHandler("foxcore_banking:transfer", function(target, amount)
+    -- Handle transfer logic
+end)
+

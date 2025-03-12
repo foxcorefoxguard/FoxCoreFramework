@@ -22,3 +22,21 @@ end)
 for weapon, data in pairs(FoxCoreWeapons) do
     print(("Weapon: %s | Label: %s | Weight: %.1fkg"):format(weapon, data.label, data.weight))
 end
+
+RegisterCommand("openinventory", function()
+    local playerItems = {}
+
+    for k, v in pairs(Items) do
+        table.insert(playerItems, {
+            name = v.name,
+            label = v.label,
+            image = v.image
+        })
+    end
+
+    SendNUIMessage({
+        action = "openInventory",
+        items = playerItems
+    })
+    SetNuiFocus(true, true)
+end)

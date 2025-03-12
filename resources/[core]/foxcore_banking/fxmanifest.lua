@@ -23,7 +23,8 @@ files {
 client_scripts {
     'client/banking.lua',
     'client/atm.lua',
-    'client/cash.lua'
+    'client/cash.lua',
+    'client/main.lua'
 }
 
 server_scripts {

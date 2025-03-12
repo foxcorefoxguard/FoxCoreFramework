@@ -1,3 +1,6 @@
+-- Define the Charges table first
+Charges = {}
+
 -- 🚔 Misdemeanors (Lower-Level Offenses)
 Charges.Misdemeanors = {
     -- Class C Misdemeanors (Lowest Level)

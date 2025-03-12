@@ -7,3 +7,9 @@ window.addEventListener('message', function(event) {
         document.body.style.display = 'none';
     }
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+    const music = document.getElementById('loadingMusic');
+    music.volume = 0.5; // Set default volume
+});
+  

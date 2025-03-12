@@ -7,8 +7,8 @@ version '1.0.0'
 
 client_script 'client/main.lua'
 
-ui_page 'nui/index.html',
-'nui/radial.html'
+ui_page 'nui/index.html'
+
 
 files {
     'nui/index.html',

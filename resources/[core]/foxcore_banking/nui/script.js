@@ -105,8 +105,34 @@ function showNotification(message) {
     setTimeout(() => notification.remove(), 3000);
 }
 
-// ❌ Close Banking UI
-function closeBank() {
-    document.getElementById("bankUI").style.display = "none";
-    fetch(`https://foxcore_banking/closeBank`, { method: "POST" });
+// Open Banking UI with Data
+window.addEventListener("message", function (event) {
+    const data = event.data;
+
+    if (data.action === "openBanking") {
+        document.getElementById("account-balance").innerText = `$${data.balance}`;
+        loadTransactions(data.transactions);
+        document.body.style.display = "block";
+    }
+});
+
+// Load Transaction History
+function loadTransactions(transactions) {
+    const list = document.getElementById("transaction-list");
+    list.innerHTML = "";
+
+    transactions.forEach(t => {
+        const li = document.createElement("li");
+        li.textContent = `${t.type}: $${t.amount} - ${t.date}`;
+        list.appendChild(li);
+    });
 }
+
+// Close Banking UI
+function closeBanking() {
+    document.body.style.display = "none";
+    fetch(`https://${GetParentResourceName()}/closeBanking`, {
+        method: "POST"
+    });
+}
+

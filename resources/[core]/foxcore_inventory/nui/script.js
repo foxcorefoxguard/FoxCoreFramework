@@ -1,17 +1,27 @@
 window.addEventListener("message", function(event) {
-    if (event.data.type === "openInventory") {
-        document.getElementById("inventory").style.display = "block";
-        let list = document.getElementById("inventoryList");
-        list.innerHTML = "";
-        Object.keys(event.data.inventory).forEach(item => {
-            let li = document.createElement("li");
-            li.textContent = `${event.data.inventory[item]}x ${item}`;
-            li.onclick = () => fetch(`https://foxcore_inventory/useItem`, { method: "POST", body: JSON.stringify({ item }) });
-            list.appendChild(li);
+    const data = event.data;
+
+    if (data.action === "openInventory") {
+        const inventory = document.getElementById("inventory");
+        inventory.innerHTML = "";
+
+        data.items.forEach(item => {
+            const itemDiv = document.createElement("div");
+            itemDiv.classList.add("item");
+
+            const itemImage = document.createElement("img");
+            itemImage.src = item.image;
+            itemImage.alt = item.label;
+
+            const itemLabel = document.createElement("span");
+            itemLabel.textContent = item.label;
+
+            itemDiv.appendChild(itemImage);
+            itemDiv.appendChild(itemLabel);
+
+            inventory.appendChild(itemDiv);
         });
+
+        document.body.style.display = "block";
     }
 });
-
-function closeInventory() {
-    fetch(`https://foxcore_inventory/closeInventory`, { method: "POST" });
-}
